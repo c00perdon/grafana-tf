@@ -9,7 +9,7 @@ terraform {
 
 provider "grafana" {
   url  = "http://grafana.example.com/"
-  auth = var.grafana_auth
+  auth = "admin:1qaz-2wsx"
 }
 
 resource "grafana_dashboard" "example_dashboard" {

@@ -9,7 +9,3 @@ variable "grafana_port" {
   description = "Port of Grafana instance"
   default = 3000  # Replace with your Grafana port
 }
-
-variable "grafana_auth" {
-  description = "Authentication details for Grafana"
-}
