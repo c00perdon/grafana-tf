@@ -8,7 +8,8 @@ terraform {
 }
 
 provider "grafana" {
-  # Provider configuration (will be set dynamically in the GitHub Actions workflow)
+  url  = "http://grafana.example.com/"
+  auth = var.grafana_auth
 }
 
 resource "grafana_dashboard" "example_dashboard" {
