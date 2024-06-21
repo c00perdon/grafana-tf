@@ -1,7 +1,7 @@
 terraform {
   required_providers {
     grafana = {
-      source  = "grafana/terraform-provider-grafana"
+      source  = "grafana/grafana"
       version = "~> 3.2.0"  # Adjust the version constraint as needed
     }
   }
