@@ -13,9 +13,6 @@ provider "grafana" {
 }
 
 resource "grafana_dashboard" "example_dashboard" {
-  # Resource to define a Grafana dashboard
-  provider = grafana
-
   config_json = <<EOF
   {
     "editable": true,
@@ -30,7 +27,10 @@ resource "grafana_dashboard" "example_dashboard" {
           }
         ]
       }
-    ]
+    ],
+    "title": "Example Dashboard",
+    "schemaVersion": 16,
+    "version": 0
   }
   EOF
 }
