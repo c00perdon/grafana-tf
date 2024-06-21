@@ -8,7 +8,7 @@ terraform {
 }
 
 provider "grafana" {
-  url  = "http://grafana.example.com/"
+  url  = "http://192.168.49.2:30451"
   auth = "admin:1qaz-2wsx"
 }
 
