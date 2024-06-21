@@ -1,0 +1,26 @@
+{
+    "dashboard": {
+      "id": null,
+      "uid": null,
+      "title": "Example Dashboard",
+      "tags": ["example"],
+      "timezone": "browser",
+      "schemaVersion": 16,
+      "version": 0,
+      "panels": [
+        {
+          "type": "graph",
+          "title": "Example Graph Panel",
+          "targets": [
+            {
+              "refId": "A",
+              "expr": "example_metric{job=\"example\"}"
+            }
+          ]
+        }
+      ]
+    },
+    "folderId": 0,
+    "overwrite": false
+  }
+  
